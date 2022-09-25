@@ -1,9 +1,9 @@
-package com.mymoney.investment.service;
+package com.mymoney.investment.utils;
 
 import com.mymoney.investment.enums.Assets;
 import com.mymoney.investment.enums.SupportedOperations;
+import com.mymoney.investment.service.InvestmentService;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.logging.log4j.util.Strings;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;

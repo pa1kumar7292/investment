@@ -6,6 +6,7 @@ import com.mymoney.investment.dao.DataStub;
 import com.mymoney.investment.dto.PortfolioDTO;
 import com.mymoney.investment.enums.Assets;
 import com.mymoney.investment.model.Fund;
+import com.mymoney.investment.utils.InvestmentHelper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 

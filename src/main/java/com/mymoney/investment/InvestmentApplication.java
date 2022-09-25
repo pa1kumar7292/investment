@@ -1,6 +1,6 @@
 package com.mymoney.investment;
 
-import com.mymoney.investment.service.InvestmentHelper;
+import com.mymoney.investment.utils.InvestmentHelper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
