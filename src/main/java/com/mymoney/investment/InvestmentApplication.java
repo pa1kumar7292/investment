@@ -5,10 +5,12 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.core.annotation.Order;
 
 import java.util.InputMismatchException;
 
 @SpringBootApplication
+@Order(-1)
 @Slf4j
 public class InvestmentApplication implements CommandLineRunner {
 
@@ -30,11 +32,12 @@ public class InvestmentApplication implements CommandLineRunner {
 					"Please specify the input file");
 		}
 		String input = args[0];
-		if ("CLI".equalsIgnoreCase(input)) {
+		if ("shell".equalsIgnoreCase(input)) {
 			log.info("Entering to Command line Mode");
 			return;
 		} else {
 			investmentHelper.processInvestment(input);
+			System.exit(0);
 		}
 
 	}
